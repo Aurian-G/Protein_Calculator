@@ -31,10 +31,11 @@ if fitness_goal == 1:
         time.sleep(1)
         weight_text = input('Please enter your current weight in pounds: ')
         weight = float(weight_text)
+        protein_formula_bulking = round(float((weight/2.2)*2.3), 2)
         time.sleep(1)
         print('Thinking...')
         time.sleep(2)
-        print('You need to consume', (weight * 2), 'grams of protein to achieve your goals.')
+        print('You need to consume', protein_formula_bulking, 'grams of protein to achieve your goals.')
 
 if fitness_goal == 2:
     time.sleep(1)
@@ -48,9 +49,13 @@ if fitness_goal == 2:
         time.sleep(1)
         weight_text = input('Please enter your current weight in pounds: ')
         weight = float(weight_text)
+        protein_formula_cutting = round(float((weight/2.2))*1.2), 2)
         time.sleep(1)
         print('Thinking...')
         time.sleep(2)
-        print('You need to consume', (weight * 1), 'grams of protein to achieve your goals.')
+        print('You need to consume', protein_formula_cutting, 'grams of protein to achieve your goals.')
+
+
+
 
 
