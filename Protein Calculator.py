@@ -49,7 +49,7 @@ if fitness_goal == 2:
         time.sleep(1)
         weight_text = input('Please enter your current weight in pounds: ')
         weight = float(weight_text)
-        protein_formula_cutting = round(float((weight/2.2))*1.2), 2)
+        protein_formula_cutting = round(float((weight/2.2)*1.2), 2)
         time.sleep(1)
         print('Thinking...')
         time.sleep(2)
