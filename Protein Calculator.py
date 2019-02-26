@@ -40,7 +40,7 @@ if fitness_goal == 1:
 if fitness_goal == 2:
     time.sleep(1)
     print('You have selected Cutting and Aerobic Conditioning.')
-    time.sleep(2)
+    time.sleep(0.5)
     if age_number <=14:
         print('You are not old enough to participate.')
     else:
