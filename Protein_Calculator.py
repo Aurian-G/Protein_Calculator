@@ -1,4 +1,5 @@
 #Protein Intake Calculator
+#Python v3.7.2
 
 import time
 
