@@ -12,6 +12,14 @@ def cutting_routine(cut):
     round_equation = round(equation, 2)
     return (f'you must consume {round_equation} grams of protein to achieve your goals'.format(round_equation))
 
+def old_enough(age):
+    if age <14:
+        print('you are not old enough to participate in this exercise.')
+        return False
+    else:
+        print('you are old enough to participate.')
+        return True 
+
 print('''Hello, I am new to programming and wanted to create an exercise.
 We are going to calculate the amount of protein you need to consume based on
 your goals. You must be 14 years or older to participate.
@@ -27,24 +35,18 @@ age_number_text = input('Please enter your age: ')
 age_number = int(age_number_text)
 
 if fitness_goal == 1:
-    print('You have selected Bulking and Strength Conditioning') 
-    if age_number <14:
-        print('you are not old enough to participate in this exercise.')
-    else:
-        print('you are old enough to participate.')
-
-    bulk = float(input('Please enter your current weight in pounds: '))
+    print('You have selected Bulking and Strength Conditioning')
+    if old_enough(age_number):
+         
+        bulk = float(input('Please enter your current weight in pounds: '))
         
-    print(bulking_routine(bulk)) 
+        print(bulking_routine(bulk)) 
     
 if fitness_goal == 2:
     print('You have selected Cutting and Aerobic Conditioning.')
-    if age_number <14:
-        print('you are not old enough to participate in this exercise.')
-    else:
-        print('you are old enough to participate.')
+    if old_enough(age_number):
         
-    cut = float(input('Please enter your current weight in pounds: '))
+        cut = float(input('Please enter your current weight in pounds: '))
         
-    print(cutting_routine(cut))
+        print(cutting_routine(cut))
     
