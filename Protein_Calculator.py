@@ -1,7 +1,7 @@
 #Protein Intake Calculator
 #Python v3.7.2
 #Git test 1/5/2020
-#R Studio implementation test 1/5/2020
+#R Studio Implementation Test 1/5/2020
 
 import time
 
