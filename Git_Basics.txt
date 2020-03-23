@@ -1,0 +1,51 @@
+GitHub Basics
+
+1)Create Repo
+2)Create folders with "create new file", followed by a foward slash/ or none for just files.
+
+
+Branches
+1)click "branches" go from Masters -> create branch
+2)creates a branch copy of the Master branch, but wont commit changes to master
+3)Do you edits, save
+4)If you want to push your edits, then go to your branch and click "New Pull Request"
+5)Type in your edits in your branch master (commits) and how to in description, then confirm
+6)Click "Merge Pull Request"
+7)Merges your pull request into the new Master branch now
+
+#Edit someone elses Repo
+1)Fork or ?Clone their repo
+2)make your changes to master branch of forked repo (commits)
+3)submit a pull request
+4)put in your comments
+5)wait for other side to merge your ish if applicable
+
+####GIT COMMANDS########
+Basics: 
+cd - command directory (open directory)
+ls - list all files in current directory
+mkdir *dir name* - creates a directory/folder
+pwd
+clear - clears your command prompt
+
+##CLONE & CHANGE FILES IN YOUR REPO##
+##COMANDS
+-if you do without paranthesis (open .) it will open up the directory pop up window on your machine to manually select
+-git clone URL. That is the literally command, no quotes around URL, just do git clone URL. You get the URL from the clone github page.
+-change the file(bash "open .")
+-git commit -a (This commits it to your local repo)
+-git push origin master. (Pushes change to remote cloud repo(GITHUB)). Back to the Origin, whereever we cloned it for
+
+##SEND CHANGES TO GIT HUB
+1) from command line do (git clone URL)
+2) then travel to the directory where you want to make changes and do (open .)
+3) Open and do your changes then save
+4) At this point, it is saved into your local machine, but not actual github
+5) So now we are going to push these changes, BUT first you must commit them
+6) To commit changes do (git commit -a -m "type message here")
+7) Then it will save 1 file change, 1 instertion
+8) Then to actually push the changes BACK to your github branch, do (git push origin master) (git push where branch)
+9) Updates automatically, no need to merge b/c it is your own repo
+
+##IF YOU CREATE A FILE IN YOUR LOCAL REPO AND TRY TO PUSH FROM COMMAND LINE YOU CANT. YOU MUST DO IT MANUALLY FROM WEB AT GITHUB. SO UPLOAD YOUR FILE FROM GITHUB,
+THEN DO A PULL REQUEST.
